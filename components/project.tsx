@@ -9,7 +9,7 @@ import { useInViewSection } from '@/lib/hooks'
 
 type ProjectProps = typeof projectsData[number]
 
-function Project({ title, description, tags, imageUrl }: ProjectProps) {
+function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({
         target: ref,
@@ -38,16 +38,16 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
                     <div className='flex gap-2 mt-4 items-center'>
                         <a
                             className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-                            href="/boughaziakramCV.pdf"
-                            download
+                            href={demo}
+                            target='_blank'
                         >
                             Open{" "}
                             <BsEye className="opacity-60 transition" />
                         </a>
                         <a
                             className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                            href="/boughaziakramCV.pdf"
-                            download
+                            href={git}
+                            target='_blank'
                         >
                             Source{" "}
                             <BsGithub className="opacity-60 transition" />
