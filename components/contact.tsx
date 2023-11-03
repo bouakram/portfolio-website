@@ -36,9 +36,9 @@ function Contact() {
             <form
                 className="mt-10 flex flex-col dark:text-black"
                 action={async (formData) => {
-                    const { error } = await sendEmail(formData)
+                    const error = await sendEmail(formData)
                     if (error) {
-                        return toast.error(error);
+                        return toast.error("somthing went wrong");
                     }
                     toast.success('your message has been sent');
                 }}
