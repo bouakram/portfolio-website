@@ -34,21 +34,9 @@ export const sendEmail = async (formData: FormData) => {
             }),
         })  
     } catch (error: unknown) {
-        if(error instanceof Error){
-            return{
-                error: error.message
-            }
-        }else if (error && typeof error === 'object' && 'message' in error){
-            return{
-                error: error.message
-            }
-        }else if (typeof error === "string") {
-            error = error;
-            return {error: error}
-        }else {
+            console.log(error)
             error = "Something went wrong";
-            return {error: error}
+            return error
         }
-    }
     return {data};
 }
