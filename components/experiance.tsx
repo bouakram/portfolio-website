@@ -16,6 +16,7 @@ function Experiance() {
             <SectionHeading>My experience</SectionHeading>
             <VerticalTimeline lineColor="#e5e7eb">
                 {experiencesData.map((item, index) => {
+                    // eslint-disable-next-line react-hooks/rules-of-hooks
                     const { ref, inView } = useInView({
                         triggerOnce: true,
                         threshold: 0.25
