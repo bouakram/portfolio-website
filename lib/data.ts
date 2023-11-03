@@ -1,10 +1,12 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import project1 from '@/public/images/project1.png'
-import project2 from '@/public/images/project2.png'
-import project3 from '@/public/images/project3.png'
+import bondi from '@/public/images/bondi.png'
+import manage from '@/public/images/manage.png'
+import typinggame from '@/public/images/typinggame.png'
+import designresources from '@/public/images/designresources.png'
+import doctidox from '@/public/images/doctidox.png'
+import Blog from '@/public/images/blog.png'
 
 export const links = [
     {
@@ -35,52 +37,85 @@ export const links = [
   
   export const experiencesData = [
     {
-      title: "Graduated bootcamp",
-      location: "Miami, FL",
+      title: "Bachlor in Computer Science",
+      location: "Guelma Algeria",
       description:
-        "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+        "I completed a Bachelor's degree in Computer Science with excellent results on my final project, which focused on object detection using ML (HOG & SVM) and Deep Learning (Yolo v3).",
       icon: React.createElement(LuGraduationCap),
-      date: "2019",
+      date: "2021",
     },
     {
-      title: "Front-End Developer",
-      location: "Orlando, FL",
+      title: "Master in Computer Science",
+      location: "Guelma Algeria",
       description:
-        "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+        "I have successfully completed a Master's in Computer Science and achieved excellent results in my final project, which focused on a Point Of Interest (POI) recommender system. I employed a combination of machine learning, deep learning, and graph techniques to obtain these results.",
+      icon: React.createElement(LuGraduationCap),
+      date: "2023",
+    },
+    {
+      title: "Freelancer",
+      location: "Guelma Algeria",
+      description:
+        "I embarked on a freelance journey, specializing in web development, and successfully completed client projects to their satisfaction.",
       icon: React.createElement(CgWorkAlt),
-      date: "2019 - 2021",
-    },
-    {
-      title: "Full-Stack Developer",
-      location: "Houston, TX",
-      description:
-        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-      icon: React.createElement(FaReact),
       date: "2021 - present",
     },
   ] as const;
   
   export const projectsData = [
     {
-      title: "CorpComment",
+      title: "TypingGame",
       description:
-        "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-      tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-      imageUrl: project1,
+        "I created this web app while learning JavaScript, and it's my first project using vanilla JavaScript.",
+      tags: ["JavaScript", "HTML", "CSS"],
+      imageUrl: typinggame,
+      demo: "https://bouakram.github.io/Typing-Game/",
+      git: "https://github.com/bouakram/Typing-Game"
     },
     {
-      title: "rmtDev",
+      title: "BondiLandingPage",
       description:
-        "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-      tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-      imageUrl: project2,
+        "I created this landing page while learning HTML and CSS, and I utilized Bootstrap to construct it.",
+      tags: ["HTML", "CSS", "Bootstrap"],
+      imageUrl: bondi,
+      demo: "https://bouakram.github.io/bootstrap-frontend-template/",
+      git: "https://github.com/bouakram/bootstrap-frontend-template"
     },
     {
-      title: "Word Analytics",
+      title: "ManageLandingPage",
       description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-      tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-      imageUrl: project3,
+        "I created this landing page to further practice HTML and CSS, building it with Tailwind CSS.",
+      tags: ["HTML", "CSS","Tailwind"],
+      imageUrl: manage,
+      demo: "https://62d30bf8200b4b3bdc63e8e9--silver-speculoos-53e894.netlify.app/",
+      git: "https://github.com/bouakram/tailwind-project/tree/master"
+    },
+    {
+      title: "Blog",
+      description:
+        "I created this blog website to share valuable information and provide tutorials to help people enhance their skills.",
+      tags: ["React","Next", "MongoDB", "Prisma", "Tailwind"],
+      imageUrl: Blog,
+      demo: "https://codeeaseblog.vercel.app/",
+      git: "https://github.com/bouakram/blog-app/tree/main"
+    },
+    {
+      title: "DesignResources",
+      description:
+        "I've developed a website that offers various tools to assist developers worldwide.",
+      tags: ["React", "Strapi","Tailwind"],
+      imageUrl: designresources,
+      demo: "#",
+      git: "#"
+    },
+    {
+      title: "DoctiDox",
+      description:
+        "I developed the backend and handled data retrieval for a freelance platform serving medical students with courses, PDFs, audio, video, quizzes, and more.",
+      tags: ["React", "Node","Express", "MongoDB", "Docker", "Redux"],
+      imageUrl: doctidox,
+      demo: "http://doctidox.com/",
+      git: "#"
     },
   ] as const;
   
@@ -94,10 +129,13 @@ export const links = [
     "Node.js",
     "Git",
     "Tailwind",
+    "MUI",
+    "Strapi",
     "Prisma",
     "MongoDB",
     "Redux",
     "Express",
+    "SQL",
     "PostgreSQL",
     "Python",
     "FastAPI",
