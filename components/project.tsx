@@ -5,7 +5,9 @@ import { BsEye, BsGithub } from 'react-icons/bs'
 import { projectsData } from '@/lib/data'
 import { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
-import { useInViewSection } from '@/lib/hooks'
+// import { useInViewSection } from '@/lib/hooks'
+import toast from 'react-hot-toast'
+import { BiTimeFive } from 'react-icons/bi'
 
 type ProjectProps = typeof projectsData[number]
 
@@ -38,16 +40,21 @@ function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps
                     <div className='flex gap-2 mt-4 items-center'>
                         <a
                             className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-                            href={demo}
-                            target='_blank'
+                            onClick={() => demo === "#" && toast("coming soon!", {
+                                icon: <BiTimeFive className='text-orange-500' />,
+                            })}
+                            aria-disabled={demo === "#" ? true : undefined}
+                            href={demo !== "#" ? demo : undefined}
+                            target={demo !== "#" ? '_blank' : undefined}
                         >
                             Open{" "}
                             <BsEye className="opacity-60 transition" />
                         </a>
                         <a
                             className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                            href={git}
-                            target='_blank'
+                            aria-disabled={demo === "#" ? true : undefined}
+                            href={demo !== "#" ? demo : undefined}
+                            target={demo !== "#" ? '_blank' : undefined}
                         >
                             Source{" "}
                             <BsGithub className="opacity-60 transition" />
