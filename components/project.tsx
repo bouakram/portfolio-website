@@ -39,10 +39,10 @@ function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps
                     </ul>
                     <div className='flex gap-2 mt-4 items-center'>
                         <a
-                            className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-                            onClick={() => demo === "#" && toast("coming soon!", {
-                                icon: <BiTimeFive className='text-orange-500' />,
-                            })}
+                            className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
+                            // onClick={() => demo === "#" && toast("coming soon!", {
+                            //     icon: <BiTimeFive className='text-orange-500' />,
+                            // })}
                             aria-disabled={demo === "#" ? true : undefined}
                             href={demo !== "#" ? demo : undefined}
                             target={demo !== "#" ? '_blank' : undefined}
@@ -52,9 +52,9 @@ function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps
                         </a>
                         <a
                             className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                            aria-disabled={demo === "#" ? true : undefined}
-                            href={demo !== "#" ? demo : undefined}
-                            target={demo !== "#" ? '_blank' : undefined}
+                            aria-disabled={git === "#" ? true : undefined}
+                            href={git !== "#" ? git : undefined}
+                            target={git !== "#" ? '_blank' : undefined}
                         >
                             Source{" "}
                             <BsGithub className="opacity-60 transition" />
