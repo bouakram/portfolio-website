@@ -38,27 +38,27 @@ function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps
                         ))}
                     </ul>
                     <div className='flex gap-2 mt-4 items-center'>
-                        <a
+                        {demo !== "#" && <a
                             className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
                             // onClick={() => demo === "#" && toast("coming soon!", {
                             //     icon: <BiTimeFive className='text-orange-500' />,
                             // })}
-                            aria-disabled={demo === "#" ? true : undefined}
-                            href={demo !== "#" ? demo : undefined}
-                            target={demo !== "#" ? '_blank' : undefined}
+                            // aria-disabled={demo === "#" ? true : undefined}
+                            href={demo}
+                            target={'_blank'}
                         >
                             Open{" "}
                             <BsEye className="opacity-60 transition" />
-                        </a>
-                        <a
+                        </a>}
+                        {git !== "#" && <a
                             className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                            aria-disabled={git === "#" ? true : undefined}
-                            href={git !== "#" ? git : undefined}
-                            target={git !== "#" ? '_blank' : undefined}
+                            // aria-disabled={git === "#" ? true : undefined}
+                            href={git}
+                            target={'_blank'}
                         >
                             Source{" "}
                             <BsGithub className="opacity-60 transition" />
-                        </a>
+                        </a>}
                     </div>
                 </div>
                 <Image src={imageUrl} alt="Projects i worked" quality={95} className='hidden sm:block absolute top-8 -right-52 w-[28.25rem] h-full rounded-lg shadow-2xl group-even:right-[initial] group-even:-left-52 group-hover:scale-[1.05] group-hover:-translate-x-6 group-hover:-translate-y-6 group-even:group-hover:translate-x-6 group-even:group-hover:-translate-y-6 transition' />
