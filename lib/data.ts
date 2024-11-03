@@ -133,7 +133,7 @@ export const projectsData = [
     description:
       "Developed full stack cross-platform Mobile App For house renting and reservation with Payment Service",
     tags: ["EXPO, Zustand, TypeScript, EAS, Node.js, MongoDB"],
-    imageUrl: doctidox,
+    imageUrl: housely,
     demo: "https://play.google.com/store/apps/details?id=com.housely.app&pcampaignid=web_share",
     git: "#"
   },
