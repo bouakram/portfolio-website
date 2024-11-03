@@ -132,7 +132,7 @@ export const projectsData = [
     title: "Housely",
     description:
       "Developed full stack cross-platform Mobile App For house renting and reservation with Payment Service",
-    tags: ["EXPO, Zustand, TypeScript, EAS, Node.js, MongoDB"],
+    tags: ["EXPO", "Zustand", "TypeScript", "EAS", "NodeJS", "MongoDB"],
     imageUrl: housely,
     demo: "https://play.google.com/store/apps/details?id=com.housely.app&pcampaignid=web_share",
     git: "#"
