@@ -6,7 +6,7 @@ import manage from '@/public/images/manage.png'
 import typinggame from '@/public/images/typinggame.png'
 // import designresources from '@/public/images/designresources.png'
 import doctidox from '@/public/images/doctidox.png'
-import housely from '@/public/images/doctidox.png'
+import housely from '@/public/images/housely.png'
 import contentgen from '@/public/images/contentgen.png'
 // import Blog from '@/public/images/blog.png'
 
