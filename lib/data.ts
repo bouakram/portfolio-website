@@ -4,10 +4,11 @@ import { LuGraduationCap } from "react-icons/lu";
 import bondi from '@/public/images/bondi.png'
 import manage from '@/public/images/manage.png'
 import typinggame from '@/public/images/typinggame.png'
-import designresources from '@/public/images/designresources.png'
+// import designresources from '@/public/images/designresources.png'
 import doctidox from '@/public/images/doctidox.png'
+import housely from '@/public/images/doctidox.png'
 import contentgen from '@/public/images/contentgen.png'
-import Blog from '@/public/images/blog.png'
+// import Blog from '@/public/images/blog.png'
 
 export const links = [
   {
@@ -127,6 +128,15 @@ export const projectsData = [
     demo: "http://doctidox.com/",
     git: "#"
   },
+  {
+    title: "Housely",
+    description:
+      "Developed full stack cross-platform Mobile App For house renting and reservation with Payment Service",
+    tags: ["EXPO, Zustand, TypeScript, EAS, Node.js, MongoDB"],
+    imageUrl: doctidox,
+    demo: "https://play.google.com/store/apps/details?id=com.housely.app&pcampaignid=web_share",
+    git: "#"
+  },
 ] as const;
 
 export const skillsData = [
@@ -142,16 +152,8 @@ export const skillsData = [
   "Git - GitHub",
   "Tailwind",
   "MUI",
-  "Prisma",
   "Redux",
   "Zustand",
-  "Strapi",
   "MongoDB",
-  // "SQL",
-  // "PostgreSQL",
-  "Python",
-  // "FastAPI",
-  // "Flask",
-  "Framer Motion",
   "Docker"
 ] as const;
