@@ -144,16 +144,22 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
+  "Go",
+  "Solidity",
   "Node JS",
   "Express JS",
   "React JS",
   "React Native",
+  "Expo",
   "Next JS",
   "Git - GitHub",
   "Tailwind",
   "MUI",
   "Redux",
+  "RTK",
+  "RTK Query",
   "Zustand",
   "MongoDB",
-  "Docker"
+  "Docker",
+  "Foundry"
 ] as const;

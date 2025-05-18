@@ -42,13 +42,7 @@ function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <span>Hello, {"I'm"} </span> <span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Boughazi Akram.</span> {"I'm"} a {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">full-stack developer</span> with {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">2 years</span> of experience. I enjoy building <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">sites & apps</span>. My focus is{" "}
-                <br />
-                <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">MERN</span>
-                {" "}|{" "}
-                <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Next JS</span>{" "}
-                |{" "}
-                <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">React Native</span>.
+                <span>Hello, {"I'm"} </span> <span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Boughazi Akram.</span> {"I'm"} a {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">developer</span> with {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">3 years</span> of experience. I enjoy building <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">sites & apps</span>. 
             </motion.h1>
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"

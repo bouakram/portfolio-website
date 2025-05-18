@@ -8,39 +8,23 @@ import { useInView } from "react-intersection-observer";
 import { useInViewSection } from "@/lib/hooks";
 
 export default function About() {
-    const { ref } = useInViewSection({ sectionName: "About" })
-    return (
-        <motion.section
-            ref={ref}
-            className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.175 }}
-            id="about"
-        >
+  const { ref } = useInViewSection({ sectionName: "About" })
+  return (
+    <motion.section
+      ref={ref}
+      className="mb-28 max-w-[45rem] text-center leading-8 scroll-mt-28"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.175 }}
+      id="about"
+    >
 
-            <SectionHeading>About me</SectionHeading>
-            <p className="mb-3">
-                I am a highly skilled <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">FULL-STACK</span> developer, committed to professionalism and focused on assisting <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">small</span> and <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">medium-sized</span> businesses.
-                I possess mastery of the <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">MERN</span> stack and <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Next JS</span>, which enables me to create robust APIs and deliver exceptional front-end experiences.
-                Moreover, I have experience in developing <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">cross-platform</span> mobile applications using <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">React Native</span>,
-                which could be a valuable asset for your team or idea. I have handled a variety of project types and complexities,
-                demonstrating versatility and adaptability in ensuring a seamless workflow, both <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">independently</span> and within a <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">team</span>.
+      <SectionHeading>About me</SectionHeading>
+      <p className="mb-3">
+        Hi, I’m <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Boughazi Akram</span> a developer from Algeria with a passion for <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">solving problems</span> and turning ideas into real, usable products. I love building <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">mobile apps</span> and <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">websites</span>, and I’m always exploring <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">new technologies</span>, tools, and concepts to keep learning and improving.
 
-                {/* {"I'm"} a passionate and adaptable 
-                <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">full-stack developer</span> 
-                with a strong foundation in 
-                <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">computer science</span>. {" "}
-                My academic background in computer science has ignited my love for programming. {"I've"} honed my expertise in the 
-                <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">MERN</span>
-                 stack, focusing on <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">React</span>, <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Next.js</span>, <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Node.js</span>, and <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">MongoDB</span>.{" "}
-                My proficiency extends to <span className="italic font-medium">TypeScript</span> and <span className="italic font-medium">Prisma</span>, allowing me to craft robust <span className="italic font-medium">back-end APIs</span> and create engaging <span className="italic font-medium">front-end</span> experiences. */}
-            </p>
-
-            {/* <p>
-                My <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">freelancing</span> journey has exposed me to diverse projects, and my passion for programming remains at the core of who I am.{" "}
-                I thrive on <span className="italic font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">challenges</span> and <span className="italic font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">constant growth</span>. Whether {"it's"} diving into new tech stacks, tackling intricate problems, or staying up-to-date with the latest trends, {"I'm"} always eager to expand my horizons.{" "} My adaptability shines as I seamlessly transition between tasks, whether working <span className="italic font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">independently</span> or within a <span className="italic font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">team</span>. My unwavering commitment to <span className="italic font-medium">delivering top-notch results</span> remains a constant driving force in my journey as a developer.
-            </p> */}
-        </motion.section>
-    );
+        In my spare time, I dive into <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">research</span>, especially in areas like <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">cybersecurity</span> and <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">blockchain</span>, which I find both challenging and inspiring. I'm also driven by <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">collaboration</span> I enjoy meeting like-minded people, sharing <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">knowledge</span>, and <span className="font-medium dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">working together</span>to create smart solutions to complex problems.
+      </p>
+    </motion.section>
+  );
 }
