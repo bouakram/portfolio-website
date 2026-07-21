@@ -38,7 +38,7 @@ function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps
             ))}
           </ul>
           <div className='flex gap-2 mt-4 items-center'>
-            {demo !== "#" && <a
+            {demo !== null && <a
               className="group bg-gray-900 text-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition cursor-pointer"
               // onClick={() => demo === "#" && toast("coming soon!", {
               //     icon: <BiTimeFive className='text-orange-500' />,
@@ -50,7 +50,7 @@ function Project({ title, description, tags, imageUrl, demo, git }: ProjectProps
               Open{" "}
               <BsEye className="opacity-60 transition" />
             </a>}
-            {git !== "#" && <a
+            {git !== null && <a
               className="group bg-white px-7 py-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
               // aria-disabled={git === "#" ? true : undefined}
               href={git}

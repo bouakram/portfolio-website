@@ -136,7 +136,7 @@ export const projectsData = [
     tags: ["React", "Node", "Express", "MongoDB", "Docker", "Redux"],
     imageUrl: doctidox,
     demo: "http://doctidox.com/",
-    git: "#"
+    git: null
   },
   {
     title: "Housely",
@@ -145,7 +145,7 @@ export const projectsData = [
     tags: ["EXPO", "Zustand", "TypeScript", "EAS", "NodeJS", "MongoDB"],
     imageUrl: housely,
     demo: "https://play.google.com/store/apps/details?id=com.housely.app&pcampaignid=web_share",
-    git: "#"
+    git: null
   },
   {
     title: "Temtem",
@@ -154,7 +154,7 @@ export const projectsData = [
     tags: ["RN CLI", "Zustand", "Tanstack Query"],
     imageUrl: temtem,
     demo: "https://play.google.com/store/apps/details?id=com.temtemone&pcampaignid=web_share",
-    git: "#"
+    git: null
   },
   {
     title: "Temtem Pro",
@@ -163,7 +163,7 @@ export const projectsData = [
     tags: ["RN CLI", "Redux", "RTK"],
     imageUrl: temtempro,
     demo: "https://play.google.com/store/apps/details?id=dz.factorydigitale.tpay&pcampaignid=web_share",
-    git: "#"
+    git: null
   },
 ] as const;
 
