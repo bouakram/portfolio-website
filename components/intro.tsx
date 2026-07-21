@@ -26,8 +26,8 @@ function Intro() {
                         animate={{ scale: 1, opacity: 1 }}
                     >
                         <Image
-                            src="/images/avatar.png"
-                            alt="boughazi akram avatar image"
+                            src="/images/avatar.jpg"
+                            alt="boughazi akram image"
                             width="192"
                             height="192"
                             quality="95"
@@ -42,7 +42,7 @@ function Intro() {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
             >
-                <span>Hello, {"I'm"} </span> <span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Boughazi Akram.</span> {"I'm"} a {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">developer</span> with {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">3 years</span> of experience. I enjoy building <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">sites & apps</span>. 
+                <span>Hello, {"I'm"} </span> <span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">Boughazi Akram.</span> {"I'm"} a {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">developer</span> with {" "}<span className="font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">5 years</span> of experience. I enjoy building <span className="italic font-bold dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-[#fba0c5] dark:to-[#a694ff]">web apps & mobile apps</span>.
             </motion.h1>
             <motion.div
                 className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
@@ -66,7 +66,7 @@ function Intro() {
 
                 <a
                     className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                    href="/BoughaziCV.pdf"
+                    href="/boughazicv.pdf"
                     download
                 >
                     Download CV{" "}

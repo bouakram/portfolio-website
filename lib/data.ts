@@ -7,6 +7,8 @@ import typinggame from '@/public/images/typinggame.png'
 // import designresources from '@/public/images/designresources.png'
 import doctidox from '@/public/images/doctidox.png'
 import housely from '@/public/images/housely.png'
+import temtem from '@/public/images/temtemone.png'
+import temtempro from '@/public/images/temtempro.png'
 import contentgen from '@/public/images/contentgen.png'
 // import Blog from '@/public/images/blog.png'
 
@@ -55,12 +57,20 @@ export const experiencesData = [
     date: "2023",
   },
   {
-    title: "Freelancer",
-    location: "Guelma Algeria",
+    title: "web & mobile developer - Freelancer",
+    location: "Algeria (Remote)",
     description:
-      "I embarked on a freelance journey, specializing in web development, and successfully completed client projects to their satisfaction.",
+      "I embarked on a freelance journey, specializing in web & mobile development, and successfully completed client projects to their satisfaction.",
     icon: React.createElement(CgWorkAlt),
-    date: "2021 - present",
+    date: "2021 - 2024",
+  },
+  {
+    title: "Mobile Developer @temtem",
+    location: "Algeria (Remote)",
+    description:
+      "I'm working as a Mobile Developer, contributing to the development, maintenance, and performance optimization of the cross-platform mobile applications Temtem and Temtem Pro, which served over 1 million users and reached approximately 300,000 daily active users during peak months. My responsibilities included integrating third-party SDKs, migrating the applications from legacy versions to the latest technologies and dependencies, improving application performance and stability, and enhancing the overall UI/UX to deliver a better user experience.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2025 - present",
   },
 ] as const;
 
@@ -110,15 +120,15 @@ export const projectsData = [
   //   demo: "#",
   //   git: "#"
   // },
-  {
-    title: "ContentGen",
-    description:
-      "I've developed a website that offers AI social media content generator.",
-    tags: ["React", "TypeScript", "ChakraUi", "Express", "Prisma", "OpenAI", "PassportJS"],
-    imageUrl: contentgen,
-    demo: "#",
-    git: "https://github.com/bouakram/ai-description-generator-client"
-  },
+  // {
+  //   title: "ContentGen",
+  //   description:
+  //     "I've developed a website that offers AI social media content generator.",
+  //   tags: ["React", "TypeScript", "ChakraUi", "Express", "Prisma", "OpenAI", "PassportJS"],
+  //   imageUrl: contentgen,
+  //   demo: "#",
+  //   git: "https://github.com/bouakram/ai-description-generator-client"
+  // },
   {
     title: "DoctiDox",
     description:
@@ -137,6 +147,24 @@ export const projectsData = [
     demo: "https://play.google.com/store/apps/details?id=com.housely.app&pcampaignid=web_share",
     git: "#"
   },
+  {
+    title: "Temtem",
+    description:
+      "Contributed to the development and maintenance of a cross-platform mobile application with over 1M users, focusing on performance optimization, UI/UX improvements, and SDK integration.",
+    tags: ["RN CLI", "Zustand", "Tanstack Query"],
+    imageUrl: temtem,
+    demo: "https://play.google.com/store/apps/details?id=com.temtemone&pcampaignid=web_share",
+    git: "#"
+  },
+  {
+    title: "Temtem Pro",
+    description:
+      "Maintained and enhanced a cross-platform mobile application, integrating third-party SDKs, upgrading legacy code and dependencies, improving performance, and refining the user experience for a large active user base.",
+    tags: ["RN CLI", "Redux", "RTK"],
+    imageUrl: temtempro,
+    demo: "https://play.google.com/store/apps/details?id=dz.factorydigitale.tpay&pcampaignid=web_share",
+    git: "#"
+  },
 ] as const;
 
 export const skillsData = [
@@ -144,8 +172,6 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "Go",
-  "Solidity",
   "Node JS",
   "Express JS",
   "React JS",
@@ -161,5 +187,4 @@ export const skillsData = [
   "Zustand",
   "MongoDB",
   "Docker",
-  "Foundry"
 ] as const;
